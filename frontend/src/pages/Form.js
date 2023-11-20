@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Form.css";
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
-import axios from "axios";
+
+//import axios from "axios";
 
 function Form() {
   const [values, setValues] = useState({
@@ -26,10 +26,20 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .post("http://localhost:5000/health", values)
+    //   axios
+    //     .post("http://localhost:5000/health", values)
+    //     .then((res) => {})
+    //     .catch((err) => console.log(err));
+    // };
+    fetch("http://localhost:5000/health", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
       .then((res) => {})
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   };
   return (
     <>
