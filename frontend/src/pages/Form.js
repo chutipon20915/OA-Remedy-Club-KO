@@ -26,11 +26,6 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //   axios
-    //     .post("http://localhost:5000/health", values)
-    //     .then((res) => {})
-    //     .catch((err) => console.log(err));
-    // };
     fetch("http://localhost:5000/health", {
       method: "POST",
       headers: {
@@ -38,7 +33,9 @@ function Form() {
       },
       body: JSON.stringify(values),
     })
-      .then((res) => {})
+      .then((res) => {
+        alert("ส่งแบบฟอรฺมเสร็จแล้ว");
+      })
       .catch((err) => console.error(err));
   };
   return (
