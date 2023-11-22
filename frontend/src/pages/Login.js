@@ -78,7 +78,7 @@ function Login() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              เข้าสู่ระบบ
+              เข้าสู่ระบบ (สำหรับผู้ป่วยข้อเข่าเสื่อม)
             </Typography>
             <Box
               component="form"

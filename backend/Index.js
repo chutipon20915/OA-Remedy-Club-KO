@@ -87,7 +87,7 @@ app.post("/authen", jsonParser, function (req, res, next) {
 
 app.post("/health", (req, res, next) => {
   connect.execute(
-    "INSERT INTO health (fname, lname, phase, question1, question2, question3, question4, question5) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+    "INSERT INTO health (fname, lname, phase, question1, question2, question3, question4, question5, question6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
     [
       req.body.fname,
       req.body.lname,
@@ -97,6 +97,7 @@ app.post("/health", (req, res, next) => {
       req.body.question3,
       req.body.question4,
       req.body.question5,
+      req.body.question6,
     ],
     function (err, results, fields) {
       if (err) {

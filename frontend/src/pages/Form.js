@@ -14,6 +14,7 @@ function Form() {
     question3: "",
     question4: "",
     question5: "",
+    question6: "",
   });
 
   const handleInput = (event) => {
@@ -34,9 +35,12 @@ function Form() {
       body: JSON.stringify(values),
     })
       .then((res) => {
-        alert("ส่งแบบฟอรฺมเสร็จแล้ว");
+        alert("ส่งแบบฟอร์มเสร็จแล้ว");
+        window.location = "/login";
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        alert("ส่งแบบฟอร์มไม่เสร็จ");
+      });
   };
   return (
     <>
@@ -93,7 +97,7 @@ function Form() {
 
           <div className="form-group">
             <label htmlFor="question" className="form-label">
-              1. ขณะเดินขึ้น-ลง บันได ท่านมีอาการปวดข้อเข่ามากน้อยแค่ไหน?
+              1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน?
             </label>
             <div className="All">
               <div className="first">
@@ -128,7 +132,7 @@ function Form() {
 
           <div className="form-group">
             <label htmlFor="question" className="form-label">
-              2. ขณะยืน ท่านสามารถทำได้มากน้อยแค่ไหน?
+              2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน?
             </label>
             <div className="All">
               <div className="first">
@@ -163,7 +167,7 @@ function Form() {
 
           <div className="form-group">
             <label htmlFor="question" className="form-label">
-              3. ขณะเดินบนพื้นราบ ท่านสามารถทำได้มากน้อยแค่ไหน?
+              3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน?
             </label>
             <div className="All">
               <div className="first">
@@ -198,7 +202,7 @@ function Form() {
 
           <div className="form-group">
             <label htmlFor="question" className="form-label">
-              4. เมื่อต้องขึ้น-ลง รถยนต์ ท่านสามารถทำได้มากน้อยแค่ไหน?
+              4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน?
             </label>
             <div className="All">
               <div className="first">
@@ -233,7 +237,7 @@ function Form() {
 
           <div className="form-group">
             <label htmlFor="question" className="form-label">
-              5. ขณะใส่หรือถอดกางเกง ท่านสามารถทำได้มากน้อยแค่ไหน?
+              5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน?
             </label>
             <div className="All">
               <div className="first">
@@ -258,6 +262,41 @@ function Form() {
                 <input
                   type="radio"
                   name="question5"
+                  value="2=เป็นประจำ"
+                  onChange={handleInput}
+                />
+                <label htmlFor="other">2=เป็นประจำ</label>
+              </div>
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="question" className="form-label">
+              5. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน?
+            </label>
+            <div className="All">
+              <div className="first">
+                <input
+                  type="radio"
+                  name="question6"
+                  value="0=ไม่เคยเลย"
+                  onChange={handleInput}
+                />
+                <label htmlFor="male">0=ไม่เคยเลย</label>
+              </div>
+              <div className="second">
+                <input
+                  type="radio"
+                  name="question6"
+                  value="1=เป็นบ้างบางครั้ง"
+                  onChange={handleInput}
+                />
+                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
+              </div>
+              <div className="last">
+                <input
+                  type="radio"
+                  name="question6"
                   value="2=เป็นประจำ"
                   onChange={handleInput}
                 />
