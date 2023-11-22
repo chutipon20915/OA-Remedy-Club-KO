@@ -96,212 +96,110 @@ function Form() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question1"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question1"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question1"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
+                  คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question1"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question2"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question2"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question2"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                  ปวดมาก, 0 คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question2"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question3"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question3"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question3"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                  ปวดมาก, 0 คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question3"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question4"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question4"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question4"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                  ปวดมาก, 0 คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question4"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question5"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question5"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question5"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
+                  คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question5"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <label htmlFor="question" className="form-label">
-              5. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน?
-            </label>
-            <div className="All">
-              <div className="first">
-                <input
-                  type="radio"
-                  name="question6"
-                  value="0=ไม่เคยเลย"
-                  onChange={handleInput}
-                />
-                <label htmlFor="male">0=ไม่เคยเลย</label>
-              </div>
-              <div className="second">
-                <input
-                  type="radio"
-                  name="question6"
-                  value="1=เป็นบ้างบางครั้ง"
-                  onChange={handleInput}
-                />
-                <label htmlFor="female">1=เป็นบ้างบางครั้ง</label>
-              </div>
-              <div className="last">
-                <input
-                  type="radio"
-                  name="question6"
-                  value="2=เป็นประจำ"
-                  onChange={handleInput}
-                />
-                <label htmlFor="other">2=เป็นประจำ</label>
-              </div>
+            <div className="mb-3">
+              <label htmlFor="fname">
+                <strong>
+                  6. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                  ปวดมาก, 0 คือ ไม่ปวด )
+                </strong>
+              </label>
+              <input
+                type="text"
+                placeholder="กรุณาใส่ระดับความปวด 0-10"
+                name="question6"
+                onChange={handleInput}
+                className="form-control rounded-0"
+              />
             </div>
           </div>
 
