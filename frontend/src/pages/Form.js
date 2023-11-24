@@ -80,7 +80,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="phase">
                 <strong>ระยะที่</strong>
               </label>
               <input
@@ -95,7 +95,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question1">
                 <strong>
                   1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
                   คือ ไม่ปวด )
@@ -113,7 +113,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question2">
                 <strong>
                   2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
                   ปวดมาก, 0 คือ ไม่ปวด )
@@ -131,7 +131,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question3">
                 <strong>
                   3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
                   ปวดมาก, 0 คือ ไม่ปวด )
@@ -149,7 +149,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question4">
                 <strong>
                   4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
                   ปวดมาก, 0 คือ ไม่ปวด )
@@ -167,7 +167,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question5">
                 <strong>
                   5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
                   คือ ไม่ปวด )
@@ -185,7 +185,7 @@ function Form() {
 
           <div className="form-group">
             <div className="mb-3">
-              <label htmlFor="fname">
+              <label htmlFor="question6">
                 <strong>
                   6. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
                   ปวดมาก, 0 คือ ไม่ปวด )
