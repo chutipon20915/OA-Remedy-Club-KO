@@ -34,7 +34,7 @@ const Home = () => {
       serverSecret,
       roomID,
       Date.now().toString(),
-      "Donut"
+      "กรุณาใส่ชื่อ"
     );
 
     // Create instance object from Kit Token.

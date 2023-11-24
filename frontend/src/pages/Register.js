@@ -17,15 +17,15 @@ export default function Register() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const jsonData = {
-      fname: data.get("fname"),
-      lname: data.get("lname"),
-      age: data.get("age"),
-      gender: data.get("gender"),
-      phase: data.get("phase"),
-      team: data.get("team"),
-      namept: data.get("namept"),
-      email: data.get("email"),
-      password: data.get("password"),
+      Fname: data.get("Fname"),
+      Lname: data.get("Lname"),
+      Age: data.get("Age"),
+      Gender: data.get("Gender"),
+      Phase: data.get("Phase"),
+      Team: data.get("Team"),
+      NamePt: data.get("NamePt"),
+      Email: data.get("Email"),
+      Password: data.get("Password"),
     };
     fetch("http://localhost:5000/register", {
       method: "POST",
@@ -75,10 +75,10 @@ export default function Register() {
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
-                  name="fname"
+                  name="Fname"
                   required
                   fullWidth
-                  id="fname"
+                  id="Fname"
                   label="ชื่อ"
                   autoFocus
                 />
@@ -87,17 +87,17 @@ export default function Register() {
                 <TextField
                   required
                   fullWidth
-                  id="lname"
+                  id="Lname"
                   label="นามสกุล"
-                  name="lname"
+                  name="Lname"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
-                  name="age"
+                  name="Age"
                   required
                   fullWidth
-                  id="age"
+                  id="Age"
                   label="อายุ"
                   type="number"
                   autoFocus
@@ -107,28 +107,29 @@ export default function Register() {
                 <TextField
                   required
                   fullWidth
-                  id="gender"
+                  id="Gender"
                   label="เพศ"
-                  name="gender"
+                  name="Gender"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
-                  id="phase"
+                  id="Phase"
                   label="ระยะที่"
                   type="number"
-                  name="phase"
+                  name="Phase"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
-                  name="team"
+                  name="Team"
                   required
                   fullWidth
-                  id="team"
+                  id="Team"
                   label="ทีม"
+                  type="number"
                   autoFocus
                 />
               </Grid>
@@ -136,28 +137,28 @@ export default function Register() {
                 <TextField
                   required
                   fullWidth
-                  id="namept"
+                  id="NamePt"
                   label="นักกายภาพบำบัด"
-                  name="namept"
+                  name="NamePt"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
-                  id="email"
+                  id="Email"
                   label="อีเมล"
-                  name="email"
+                  name="Email"
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
-                  name="password"
+                  name="Password"
                   label="รหัสผ่าน"
                   type="password"
-                  id="password"
+                  id="Password"
                 />
               </Grid>
             </Grid>

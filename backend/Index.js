@@ -21,16 +21,16 @@ const connect = mysql.createConnection({
 app.post("/register", jsonParser, (req, res, next) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
     connect.execute(
-      "INSERT INTO ko (fname, lname, age, gender, phase, team, namept, email, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      "INSERT INTO ko (Fname, Lname, Age, Gender, Phase, Team, NamePt, Email, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
       [
-        req.body.fname,
-        req.body.lname,
-        req.body.age,
-        req.body.gender,
-        req.body.phase,
-        req.body.team,
-        req.body.namept,
-        req.body.email,
+        req.body.Fname,
+        req.body.Lname,
+        req.body.Age,
+        req.body.Gender,
+        req.body.Phase,
+        req.body.Team,
+        req.body.NamePt,
+        req.body.Email,
         hash,
       ],
       function (err, results, fields) {
@@ -46,8 +46,8 @@ app.post("/register", jsonParser, (req, res, next) => {
 
 app.post("/login", jsonParser, (req, res, next) => {
   connect.execute(
-    "SELECT * FROM ko WHERE email=?",
-    [req.body.email],
+    "SELECT * FROM ko WHERE Email=?",
+    [req.body.Email],
     function (err, pt, fields) {
       if (err) {
         res.json({ status: "error", message: err });
@@ -58,11 +58,11 @@ app.post("/login", jsonParser, (req, res, next) => {
         return;
       }
       bcrypt.compare(
-        req.body.password,
-        pt[0].password,
+        req.body.Password,
+        pt[0].Password,
         function (err, isLogin) {
           if (isLogin) {
-            var token = jwt.sign({ email: pt[0].email }, secret, {
+            var token = jwt.sign({ Email: pt[0].Email }, secret, {
               expiresIn: "1h",
             });
             res.json({ status: "ok", message: "login api success", token });
@@ -87,17 +87,17 @@ app.post("/authen", jsonParser, function (req, res, next) {
 
 app.post("/health", (req, res, next) => {
   connect.execute(
-    "INSERT INTO health (fname, lname, phase, question1, question2, question3, question4, question5, question6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+    "INSERT INTO health (Fname, Lname, Phase, Question1, Question2, Question3, Question4, Question5, Question6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
     [
-      req.body.fname,
-      req.body.lname,
-      req.body.phase,
-      req.body.question1,
-      req.body.question2,
-      req.body.question3,
-      req.body.question4,
-      req.body.question5,
-      req.body.question6,
+      req.body.Fname,
+      req.body.Lname,
+      req.body.Phase,
+      req.body.Question1,
+      req.body.Question2,
+      req.body.Question3,
+      req.body.Question4,
+      req.body.Question5,
+      req.body.Question6,
     ],
     function (err, results, fields) {
       if (err) {

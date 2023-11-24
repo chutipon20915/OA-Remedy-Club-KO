@@ -2,19 +2,17 @@ import React, { useState } from "react";
 import "./Form.css";
 import Navbar from "../components/Navbar";
 
-//import axios from "axios";
-
 function Form() {
   const [values, setValues] = useState({
-    fname: "",
-    lname: "",
-    phase: "",
-    question1: "",
-    question2: "",
-    question3: "",
-    question4: "",
-    question5: "",
-    question6: "",
+    Fname: "",
+    Lname: "",
+    Phase: "",
+    Question1: "",
+    Question2: "",
+    Question3: "",
+    Question4: "",
+    Question5: "",
+    Question6: "",
   });
 
   const handleInput = (event) => {
@@ -58,7 +56,7 @@ function Form() {
               <input
                 type="text"
                 placeholder="กรุณาใส่ชื่อ"
-                name="fname"
+                name="Fname"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -73,7 +71,7 @@ function Form() {
               <input
                 type="text"
                 placeholder="กรุณาใส่นามสกุล"
-                name="lname"
+                name="Lname"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -86,9 +84,9 @@ function Form() {
                 <strong>ระยะที่</strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระยะที่เป็น"
-                name="phase"
+                name="Phase"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -104,9 +102,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question1"
+                name="Question1"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -122,9 +120,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question2"
+                name="Question2"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -140,9 +138,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question3"
+                name="Question3"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -158,9 +156,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question4"
+                name="Question4"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -176,9 +174,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question5"
+                name="Question5"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
@@ -194,9 +192,9 @@ function Form() {
                 </strong>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="กรุณาใส่ระดับความปวด 0-10"
-                name="question6"
+                name="Question6"
                 onChange={handleInput}
                 className="form-control rounded-0"
               />
