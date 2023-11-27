@@ -7,16 +7,23 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 const secret = "Fullstack-Login";
 const jwt = require("jsonwebtoken");
+const PORT = 5000;
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const connect = mysql.createConnection({
+const connect = mysql.createPool({
   host: "localhost",
   user: "root",
   database: "oa_xammp",
+  // host: "dboa.mysql.database.azure.com",
+  // user: "ubuntuServer",
+  // password: "donut20915*",
+  // database: "oa_xammp",
+  // port: 3306,
 });
+//connect.connect();
 
 app.post("/register", jsonParser, (req, res, next) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
@@ -109,6 +116,6 @@ app.post("/health", (req, res, next) => {
   );
 });
 
-app.listen(5000, () => {
-  console.log("Listening Localhost port 5000...");
+app.listen(PORT, function () {
+  console.log(`Listening Localhost port ${PORT}..`);
 });
