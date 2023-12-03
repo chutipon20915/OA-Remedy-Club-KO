@@ -8,6 +8,8 @@ const saltRounds = 10;
 const secret = "Fullstack-Login";
 const jwt = require("jsonwebtoken");
 const PORT = 5000;
+// const dotenv = require("dotenv");
+// dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -17,13 +19,12 @@ const connect = mysql.createPool({
   host: "localhost",
   user: "root",
   database: "oa_xammp",
-  // host: "dboa.mysql.database.azure.com",
-  // user: "ubuntuServer",
-  // password: "donut20915*",
-  // database: "oa_xammp",
-  // port: 3306,
+  // process.env.DATABASE_URL
+  // host: process.env.DATABASE_HOST,
+  // user: process.env.DATABASE_USERNAME,
+  // password: process.env.DATABASE_PASSWORD,
+  // database: process.env.DATABASE_NAME,
 });
-//connect.connect();
 
 app.post("/register", jsonParser, (req, res, next) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
