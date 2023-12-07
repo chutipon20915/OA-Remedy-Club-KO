@@ -56,18 +56,18 @@ app.post("/login", jsonParser, (req, res, next) => {
   connect.execute(
     "SELECT * FROM ko WHERE Email=?",
     [req.body.Email],
-    function (err, pt, fields) {
+    function (err, ko, fields) {
       if (err) {
         res.json({ status: "error", message: err });
         return;
       }
-      if (pt.length == 0) {
+      if (ko.length == 0) {
         res.json({ status: "error", message: "no user found" });
         return;
       }
       bcrypt.compare(
         req.body.Password,
-        pt[0].Password,
+        ko[0].Password,
         function (err, isLogin) {
           if (isLogin) {
             var token = jwt.sign({ Email: pt[0].Email }, secret, {
