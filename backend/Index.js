@@ -15,7 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const connect = mysql.createPool({
+const db = mysql.createPool({
   host: "localhost",
   user: "root",
   database: "oa_xammp",
@@ -28,7 +28,7 @@ const connect = mysql.createPool({
 
 app.post("/register", jsonParser, (req, res, next) => {
   bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
-    connect.execute(
+    db.execute(
       "INSERT INTO ko (Fname, Lname, Age, Gender, Phase, Team, NamePt, Email, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
       [
         req.body.Fname,
@@ -53,7 +53,7 @@ app.post("/register", jsonParser, (req, res, next) => {
 });
 
 app.post("/login", jsonParser, (req, res, next) => {
-  connect.execute(
+  db.execute(
     "SELECT * FROM ko WHERE Email=?",
     [req.body.Email],
     function (err, ko, fields) {
@@ -94,7 +94,7 @@ app.post("/authen", jsonParser, function (req, res, next) {
 });
 
 app.post("/health", (req, res, next) => {
-  connect.execute(
+  db.execute(
     "INSERT INTO health (Fname, Lname, Phase, Question1, Question2, Question3, Question4, Question5, Question6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
     [
       req.body.Fname,
