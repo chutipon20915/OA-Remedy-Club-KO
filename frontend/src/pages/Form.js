@@ -98,7 +98,7 @@ function Form() {
               <label htmlFor="question1">
                 <strong>
                   1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
-                  คือ ไม่ปวด )
+                  คือ ไม่ปวด)
                 </strong>
               </label>
               <input
@@ -116,7 +116,7 @@ function Form() {
               <label htmlFor="question2">
                 <strong>
                   2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด )
+                  ปวดมาก, 0 คือ ไม่ปวด)
                 </strong>
               </label>
               <input
@@ -134,7 +134,7 @@ function Form() {
               <label htmlFor="question3">
                 <strong>
                   3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด )
+                  ปวดมาก, 0 คือ ไม่ปวด)
                 </strong>
               </label>
               <input
@@ -152,7 +152,7 @@ function Form() {
               <label htmlFor="question4">
                 <strong>
                   4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด )
+                  ปวดมาก, 0 คือ ไม่ปวด)
                 </strong>
               </label>
               <input
@@ -170,7 +170,7 @@ function Form() {
               <label htmlFor="question5">
                 <strong>
                   5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
-                  คือ ไม่ปวด )
+                  คือ ไม่ปวด)
                 </strong>
               </label>
               <input
@@ -188,7 +188,7 @@ function Form() {
               <label htmlFor="question6">
                 <strong>
                   6. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด )
+                  ปวดมาก, 0 คือ ไม่ปวด)
                 </strong>
               </label>
               <input
