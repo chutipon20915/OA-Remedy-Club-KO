@@ -19,7 +19,7 @@ const db = mysql.createPool({
 });
 
 app.post("/register", jsonParser, (req, res, next) => {
-  bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
+  bcrypt.hash(req.body.Password, saltRounds, function (err, hash) {
     db.execute(
       "INSERT INTO ko (Fname, Lname, Age, Gender, Phase, Team, NamePt, Email, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
       [
