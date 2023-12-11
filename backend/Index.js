@@ -8,9 +8,6 @@ const saltRounds = 10;
 const secret = "Fullstack-Login";
 const jwt = require("jsonwebtoken");
 const PORT = 5000;
-// const dotenv = require("dotenv");
-// dotenv.config();
-
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -19,11 +16,6 @@ const db = mysql.createPool({
   host: "localhost",
   user: "root",
   database: "oa_xammp",
-  // process.env.DATABASE_URL
-  // host: process.env.DATABASE_HOST,
-  // user: process.env.DATABASE_USERNAME,
-  // password: process.env.DATABASE_PASSWORD,
-  // database: process.env.DATABASE_NAME,
 });
 
 app.post("/register", jsonParser, (req, res, next) => {
@@ -70,7 +62,7 @@ app.post("/login", jsonParser, (req, res, next) => {
         ko[0].Password,
         function (err, isLogin) {
           if (isLogin) {
-            var token = jwt.sign({ Email: pt[0].Email }, secret, {
+            var token = jwt.sign({ Email: ko[0].Email }, secret, {
               expiresIn: "1h",
             });
             res.json({ status: "ok", message: "login api success", token });
