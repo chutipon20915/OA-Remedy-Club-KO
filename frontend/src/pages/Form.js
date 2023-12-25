@@ -51,7 +51,9 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="fname">
-                <strong>ชื่อ</strong>
+                <h4>
+                  <strong>ชื่อ</strong>
+                </h4>
               </label>
               <input
                 type="text"
@@ -66,7 +68,9 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="lname">
-                <strong>นามสกุล</strong>
+                <h4>
+                  <strong>นามสกุล</strong>
+                </h4>
               </label>
               <input
                 type="text"
@@ -81,7 +85,9 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="phase">
-                <strong>ระยะที่</strong>
+                <h4>
+                  <strong>ระยะที่</strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -96,10 +102,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question1">
-                <strong>
-                  1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
-                  คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    1. ขณะตอนนี้ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก,
+                    0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -114,10 +122,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question2">
-                <strong>
-                  2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    2. เดินบนพื้นราบ ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                    ปวดมาก, 0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -132,10 +142,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question3">
-                <strong>
-                  3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    3. เดินขึ้นลงบันได ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                    ปวดมาก, 0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -150,10 +162,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question4">
-                <strong>
-                  4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    4. ขณะนอนบนเตียง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                    ปวดมาก, 0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -168,10 +182,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question5">
-                <strong>
-                  5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก, 0
-                  คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    5. ขณะลุกนั่ง ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ ปวดมาก,
+                    0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -186,10 +202,12 @@ function Form() {
           <div className="form-group">
             <div className="mb-3">
               <label htmlFor="question6">
-                <strong>
-                  6. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
-                  ปวดมาก, 0 คือ ไม่ปวด)
-                </strong>
+                <h4>
+                  <strong>
+                    6. ขณะยืนลงน้ำหนัก ปวดมากน้อยแค่ไหน? (ระดับความปวด 10 คือ
+                    ปวดมาก, 0 คือ ไม่ปวด)
+                  </strong>
+                </h4>
               </label>
               <input
                 type="number"
@@ -203,7 +221,7 @@ function Form() {
 
           <div className="form-group">
             <button className="btn" type="submit">
-              ส่งคำตอบ
+              <h4>ส่งคำตอบ</h4>
             </button>
           </div>
         </form>
