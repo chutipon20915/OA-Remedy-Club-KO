@@ -13,7 +13,13 @@ Download "OA-Remedy-Club-KO"
 
 ``` bash
 1. cd backend 
+```
+
+``` bash
 2. npm i
+```
+
+``` bash
 3. npm start
 ```
 
