@@ -12,30 +12,38 @@ Download "OA-Remedy-Club-KO"
 ### backend
 
 ``` bash
-1. cd backend 
+1. cd OA-Remedy-Club-KO
 ```
 
 ``` bash
-2. npm i
+2. cd backend 
 ```
 
 ``` bash
-3. npm start
+3. npm i
+```
+
+``` bash
+4. npm start
 ```
 
 
 ### frontend 
 
 ``` bash
-1. cd frontend 
+1. cd OA-Remedy-Club-KO
 ```
 
 ``` bash
-2. npm i
+2. cd frontend 
 ```
 
 ``` bash
-3. npm start
+3. npm i
+```
+
+``` bash
+4. npm start
 ```
 
 
