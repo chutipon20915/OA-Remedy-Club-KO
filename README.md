@@ -9,7 +9,7 @@
 Download "OA-Remedy-Club-KO"
 ```
 
-### backend
+## backend
 
 ``` bash
 1. cd OA-Remedy-Club-KO
@@ -28,7 +28,7 @@ Download "OA-Remedy-Club-KO"
 ```
 
 
-### frontend 
+## frontend 
 
 ``` bash
 1. cd OA-Remedy-Club-KO
